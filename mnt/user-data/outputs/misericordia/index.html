@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Misericordia — Presentaciones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared/css/base.css" />
+  <style>
+    body { background: #080807; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; }
+    .landing-logo { font-size: 3rem; background: #F5C518; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; }
+    .landing-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.5rem); color: #fff; text-align: center; margin-bottom: 0.5rem; }
+    .landing-sub { color: #7a7670; text-align: center; margin-bottom: 3rem; font-size: 1rem; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 360px)); gap: 1.5rem; max-width: 800px; }
+    .pcard { background: #111110; border: 1px solid rgba(245,197,24,0.12); border-radius: 12px; padding: 2rem; text-decoration: none; transition: border-color 0.3s, transform 0.3s; display: block; }
+    .pcard:hover { border-color: #F5C518; transform: translateY(-4px); }
+    .pcard__tag { font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: #F5C518; font-weight: 600; margin-bottom: 1rem; }
+    .pcard__title { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #fff; margin-bottom: 0.5rem; }
+    .pcard__desc { color: #7a7670; font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.25rem; }
+    .pcard__cta { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: #F5C518; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="landing-logo">❤</div>
+  <h1 class="landing-title">Misericordia</h1>
+  <p class="landing-sub">Presentaciones de proyecto</p>
+
+  <div class="cards">
+    <a href="/brands/bajos-de-mena/" class="pcard">
+      <div class="pcard__tag">Chile · 2025</div>
+      <div class="pcard__title">Bajos de Mena</div>
+      <div class="pcard__desc">Centro comunitario y capilla. Propuesta de financiamiento para el nuevo lugar de misión en Santiago.</div>
+      <div class="pcard__cta">Ver presentación →</div>
+    </a>
+  </div>
+</body>
+</html>

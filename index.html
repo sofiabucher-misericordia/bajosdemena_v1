@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Bajos de Mena — Misericordia</title>
+  <meta name="description" content="Propuesta de financiamiento para el Centro Comunitario y Capilla en Bajos de Mena, Santiago de Chile." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../../shared/css/base.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+
+  <style>
+    /* inline overrides for index page */
+    .section { padding: 6rem 0; }
+    .section:first-of-type { padding-top: 0; }
+  </style>
+</head>
+<body>
+
+<!-- Progress Bar -->
+<div id="progress-bar"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#hero" class="nav__logo">
+    <div class="nav__logo-mark">❤</div>
+    <span class="nav__logo-text">Misericordia</span>
+  </a>
+  <ul class="nav__links">
+    <li><a href="#mision">Misión</a></li>
+    <li><a href="#programa">Programa</a></li>
+    <li><a href="#etapas">Etapas</a></li>
+    <li><a href="#presupuesto">Presupuesto</a></li>
+    <li><a href="#cierre">Contacto</a></li>
+  </ul>
+  <a href="https://misericordia.iraiser.eu/misericordia/chili/" target="_blank" class="nav__cta">Donar</a>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section id="hero" class="hero">
+  <div class="hero__bg">
+    <video autoplay muted loop playsinline poster="">
+      <source src="assets/proyecto.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="hero__noise"></div>
+
+  <div class="container hero__content">
+    <div class="hero__eyebrow">
+      <div class="hero__eyebrow-line"></div>
+      <span class="hero__eyebrow-text">Misericordia Chile · Bajos de Mena · Santiago</span>
+    </div>
+
+    <h1 class="hero__title">
+      Un nuevo<br/><em>corazón</em><br/>para la periferia
+    </h1>
+
+    <p class="hero__subtitle">
+      Un lugar de encuentro con Dios que cambiará la vida de miles de familias en uno de los sectores más vulnerables de Santiago.
+    </p>
+
+    <div class="hero__meta">
+      <div class="hero__meta-item">
+        <span class="hero__meta-value">18.222</span>
+        <span class="hero__meta-label">m² totales del proyecto</span>
+      </div>
+      <div class="hero__meta-divider"></div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-value">4</span>
+        <span class="hero__meta-label">etapas de desarrollo</span>
+      </div>
+      <div class="hero__meta-divider"></div>
+      <div class="hero__meta-item">
+        <span class="hero__meta-value">2.656</span>
+        <span class="hero__meta-label">m² construidos</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll">
+    <span>Descubrir</span>
+    <div class="hero__scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MISIÓN
+     ============================================================ -->
+<section id="mision" class="section" style="background: var(--clr-surface);">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-image-frame">
+          <img src="assets/programa.jpg" alt="Plan maestro Bajos de Mena" />
+        </div>
+        <div class="about-badge">
+          <strong>2013</strong>
+          <span>Fundada en Chile</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">
+            <span class="section-eyebrow-text">¿Quiénes somos?</span>
+          </div>
+          <h2 class="section-title">La misericordia<br/><em>cambia el mundo</em></h2>
+        </div>
+
+        <div class="reveal">
+          <p>
+            <strong>Misericordia</strong> nace en 2013 cuando Romain y Rena de Chateauvieux se establecen en uno de los barrios más pobres y emblemáticos de Santiago de Chile. Hoy somos personas convencidas de que la misericordia puede transformar la periferia.
+          </p>
+          <p>
+            Nuestro trabajo integra <strong>acción social y pastoral</strong>: educación, salud, acogida y anuncio del Evangelio. El Centro Misericordia es el corazón visible de esa presencia, un lugar de paz y encuentro que late de día y de noche por los pobres.
+          </p>
+          <p>
+            <strong>Bajos de Mena</strong> es nuestro nuevo lugar de misión. Uno de los sectores con mayor densidad de vulnerabilidad social en Chile, donde la fundación está llamada a construir algo que no existe: un espacio de dignidad, comunidad y esperanza.
+          </p>
+
+          <div style="margin-top: 1.5rem; padding: 1.25rem 1.5rem; border-left: 2px solid var(--clr-accent); background: var(--clr-surface2); border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+            <p style="font-family: var(--font-display); font-style: italic; color: var(--clr-text); line-height: 1.6; margin-bottom: 0.5rem;">
+              «La misericordia cambia el mundo. Hace al mundo menos frío y más justo.»
+            </p>
+            <cite style="font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--clr-muted); font-style: normal;">— Papa Francisco, Roma, marzo 2013</cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     KPIs
+     ============================================================ -->
+<section class="section" style="padding: 4rem 0; background: var(--clr-bg);">
+  <div class="container">
+    <div class="kpi-grid-main reveal-stagger">
+      <div class="kpi-main-card">
+        <div class="kpi-main-card__num">
+          <span data-counter="18222" data-suffix=" m²">0 m²</span>
+        </div>
+        <div class="kpi-main-card__label">Superficie total terreno</div>
+      </div>
+      <div class="kpi-main-card">
+        <div class="kpi-main-card__num">
+          <span data-counter="2656" data-suffix=" m²">0 m²</span>
+        </div>
+        <div class="kpi-main-card__label">Superficie construida</div>
+      </div>
+      <div class="kpi-main-card">
+        <div class="kpi-main-card__num">
+          <span data-counter="240" data-suffix=" asientos">0</span>
+        </div>
+        <div class="kpi-main-card__label">Capacidad iglesia</div>
+      </div>
+      <div class="kpi-main-card">
+        <div class="kpi-main-card__num">
+          <span data-counter="53" data-suffix=" autos">0</span>
+        </div>
+        <div class="kpi-main-card__label">Estacionamientos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     VIDEO SECTION
+     ============================================================ -->
+<section id="video" class="section video-section">
+  <div class="container">
+    <div class="section-header reveal" style="text-align:center; max-width: 600px; margin: 0 auto var(--space-lg);">
+      <div class="section-eyebrow" style="justify-content: center;">
+        <span class="section-eyebrow-text">El Proyecto</span>
+      </div>
+      <h2 class="section-title">Ve el futuro<br/><em>de Bajos de Mena</em></h2>
+      <p class="section-lead" style="margin: 0 auto;">Un recorrido visual por el plan maestro que transformará este territorio.</p>
+    </div>
+
+    <div class="video-fullwidth reveal">
+      <video id="hero-video-player" preload="metadata" poster="">
+        <source src="assets/proyecto.mp4" type="video/mp4" />
+      </video>
+      <div class="video-play-btn" id="video-play-btn">
+        <div class="play-circle">
+          <div class="play-icon"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROGRAMA GENERAL
+     ============================================================ -->
+<section id="programa" class="section programa-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">
+        <span class="section-eyebrow-text">Plan Maestro</span>
+      </div>
+      <h2 class="section-title">11 programas,<br/><em>una sola visión</em></h2>
+      <p class="section-lead">El plan maestro integra espacios espirituales, educativos, deportivos y residenciales en un conjunto coherente y bello.</p>
+    </div>
+
+    <div class="programa-img-wrap reveal">
+      <img src="assets/programa.jpg" alt="Plan maestro Bajos de Mena — todos los programas" />
+      <div class="programa-overlay">
+        <span class="tag">Etapa 1</span>
+        <span class="tag">Etapa 2</span>
+        <span class="tag">Etapa 3</span>
+        <span class="tag">Etapa 4</span>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;" class="reveal-stagger">
+      <div class="critico-card">
+        <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">⛪</div>
+        <h4 style="color: var(--clr-white); font-size: 0.95rem; margin-bottom: 0.25rem;">Capilla + Iglesia</h4>
+        <p style="color: var(--clr-muted); font-size: 0.82rem;">240 asientos · Patio Virgen</p>
+      </div>
+      <div class="critico-card">
+        <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">📚</div>
+        <h4 style="color: var(--clr-white); font-size: 0.95rem; margin-bottom: 0.25rem;">Biblio. + Conservatorio</h4>
+        <p style="color: var(--clr-muted); font-size: 0.82rem;">218 m² · Formación y cultura</p>
+      </div>
+      <div class="critico-card">
+        <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">🏫</div>
+        <h4 style="color: var(--clr-white); font-size: 0.95rem; margin-bottom: 0.25rem;">Educación</h4>
+        <p style="color: var(--clr-muted); font-size: 0.82rem;">960 m² · Formación integral</p>
+      </div>
+      <div class="critico-card">
+        <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">⚽</div>
+        <h4 style="color: var(--clr-white); font-size: 0.95rem; margin-bottom: 0.25rem;">Deportes</h4>
+        <p style="color: var(--clr-muted); font-size: 0.82rem;">Cancha · Camarín 145 m²</p>
+      </div>
+      <div class="critico-card">
+        <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">🏠</div>
+        <h4 style="color: var(--clr-white); font-size: 0.95rem; margin-bottom: 0.25rem;">Hogar + Albergue</h4>
+        <p style="color: var(--clr-muted); font-size: 0.82rem;">480 m² + 90 m² · Acogida</p>
+      </div>
+      <div class="critico-card">
+        <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">🌿</div>
+        <h4 style="color: var(--clr-white); font-size: 0.95rem; margin-bottom: 0.25rem;">Huerta + Jardín</h4>
+        <p style="color: var(--clr-muted); font-size: 0.82rem;">90 m² jardín · Huerta comunitaria</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ETAPAS
+     ============================================================ -->
+<section id="etapas" class="section etapas-section" style="background: var(--clr-bg);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">
+        <span class="section-eyebrow-text">Desarrollo por fases</span>
+      </div>
+      <h2 class="section-title">Cuatro etapas,<br/><em>una transformación</em></h2>
+      <p class="section-lead">El proyecto se desarrolla en fases para asegurar la viabilidad y el impacto progresivo en la comunidad.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="etapas-tabs reveal">
+      <button class="etapa-tab active">① Primera etapa</button>
+      <button class="etapa-tab">② Segunda etapa</button>
+      <button class="etapa-tab">③ Tercera etapa</button>
+      <button class="etapa-tab">④ Cuarta etapa</button>
+    </div>
+
+    <!-- Panels -->
+    <div class="etapas-panels">
+
+      <!-- Panel 1 -->
+      <div class="etapa-panel active">
+        <div class="etapa-panel__image">
+          <img src="assets/etapa01.jpg" alt="Primera etapa" />
+        </div>
+        <div class="etapa-panel__content">
+          <div class="etapa-num">01</div>
+          <h3 class="etapa-panel__title">Primera Etapa</h3>
+          <p class="etapa-panel__desc">El corazón espiritual y comunitario del proyecto. Incluye la capilla, cafetería, biblioteca y jardín — los primeros espacios que darán vida al centro.</p>
+          <div class="etapa-stats">
+            <div class="etapa-stat">
+              <div class="etapa-stat__value">5.700 m²</div>
+              <div class="etapa-stat__label">Superficie terreno</div>
+            </div>
+            <div class="etapa-stat">
+              <div class="etapa-stat__value">735 m²</div>
+              <div class="etapa-stat__label">Superficie construida</div>
+            </div>
+            <div class="etapa-stat">
+              <div class="etapa-stat__value">$1.500M</div>
+              <div class="etapa-stat__label">Costo total etapa</div>
+            </div>
+            <div class="etapa-stat">
+              <div class="etapa-stat__value">$303M</div>
+              <div class="etapa-stat__label">Solo saneamiento</div>
+            </div>
+          </div>
+          <ul class="etapa-programas">
+            <li>Capilla — 240 m²</li>
+            <li>Cafetería — 90 m²</li>
+            <li>Biblioteca + Conservatorio — 218 m²</li>
+            <li>Jardín — 90 m²</li>
+          </ul>
+          <div style="margin-top: 1.5rem;">
+            <span class="tag">Prioridad máxima</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2 -->
+      <div class="etapa-panel">
+        <div class="etapa-panel__image">
+          <img src="assets/etapa02.jpg" alt="Segunda etapa" />
+        </div>
+        <div class="etapa-panel__content">
+          <div class="etapa-num">02</div>
+          <h3 class="etapa-panel__title">Segunda Etapa</h3>
+          <p class="etapa-panel__desc">Ampliación del espacio de culto y encuentro comunitario. La iglesia de 240 asientos se convierte en el gran polo de convocatoria del sector.</p>
+          <div class="etapa-stats">
+            <div class="etapa-stat">
+              <div class="etapa-stat__value">2.000 m²</div>
+              <div class="etapa-stat__label">Superficie terreno</div>
+            </div>
+            <div class="etapa-stat">
+              <div class="etapa-stat__value">360 m²</div>
+              <div class="etapa-stat__label">Superficie construida</div>
+            </div>
+          </div>
+          <ul class="etapa-programas">
+            <li>Iglesia — 240 asientos</li>
+            <li>Patio Virgen</li>
+            <li>Capilla complementaria</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Panel 3 -->
+      <div class="etapa-panel">
+        <div class="etapa-panel__image">
+          <img src="assets/etapa03.jpg" alt="Tercera etapa" />
+        </div>
+        <div class="etapa-panel__content">
+          <div class="etapa-num">03</div>
+          <h3 class="etapa-panel__title">Tercera Etapa</h3>
+          <p class="etapa-panel__desc">El polo educativo y deportivo del proyecto. El edificio de educación y la cancha de fútbol anclan la vida comunitaria con actividades cotidianas para niños y jóvenes.</p>
+          <div class="etapa-stats">
+            <div class="etapa-stat">
+              <div class="etapa-stat__value">5.642 m²</div>
+              <div class="etapa-stat__label">Superficie terreno</div>
+            </div>
+            <div class="etapa-stat">
+              <div class="etapa-stat__value">845 m²</div>
+              <div class="etapa-stat__label">Superficie construida</div>
+            </div>
+          </div>
+          <ul class="etapa-programas">
+            <li>Educación — 960 m²</li>
+            <li>Camarín + Bodegas — 145 m²</li>
+            <li>Cancha deportiva</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Panel 4 -->
+      <div class="etapa-panel">
+        <div class="etapa-panel__image">
+          <img src="assets/etapa04.jpg" alt="Cuarta etapa" />
+        </div>
+        <div class="etapa-panel__content">
+          <div class="etapa-num">04</div>
+          <h3 class="etapa-panel__title">Cuarta Etapa</h3>
+          <p class="etapa-panel__desc">La consolidación final del plan maestro. Hogar, albergue, huerta comunitaria y estacionamientos completan el ecosistema de servicios para los más vulnerables.</p>
+          <div class="etapa-stats">
+            <div class="etapa-stat">
+              <div class="etapa-stat__value">4.880 m²</div>
+              <div class="etapa-stat__label">Superficie terreno</div>
+            </div>
+            <div class="etapa-stat">
+              <div class="etapa-stat__value">716 m²</div>
+              <div class="etapa-stat__label">Superficie construida</div>
+            </div>
+          </div>
+          <ul class="etapa-programas">
+            <li>Hogar — 480 m²</li>
+            <li>Albergue — 90 m²</li>
+            <li>Huerta comunitaria</li>
+            <li>Estacionamiento — 53 autos</li>
+          </ul>
+        </div>
+      </div>
+
+    </div><!-- /.etapas-panels -->
+  </div>
+</section>
+
+<!-- ============================================================
+     PRESUPUESTO GENERAL
+     ============================================================ -->
+<section id="presupuesto" class="section presupuesto-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">
+        <span class="section-eyebrow-text">Propuesta de financiamiento</span>
+      </div>
+      <h2 class="section-title">Presupuesto<br/><em>del proyecto</em></h2>
+      <p class="section-lead">Una inversión transformadora que se estructura en dos grandes componentes: saneamiento del terreno y construcción.</p>
+    </div>
+
+    <!-- Total -->
+    <div class="presupuesto-total reveal">
+      <div class="presupuesto-total__label">Presupuesto total del proyecto</div>
+      <div class="presupuesto-total__value">
+        $<span data-counter="2586080000">0</span>
+      </div>
+      <div class="presupuesto-total__sub">CLP · Pesos chilenos · Valor estimado total plan maestro</div>
+    </div>
+
+    <!-- Breakdown -->
+    <div class="presupuesto-breakdown reveal-stagger">
+      <div class="presupuesto-card">
+        <div class="presupuesto-card__icon">🏗️</div>
+        <div class="presupuesto-card__value">$780.000.000</div>
+        <div class="presupuesto-card__label">Saneamiento total del terreno</div>
+        <div class="presupuesto-card__bar">
+          <div class="presupuesto-card__bar-fill" data-width="30.2%"></div>
+        </div>
+      </div>
+      <div class="presupuesto-card">
+        <div class="presupuesto-card__icon">🏛️</div>
+        <div class="presupuesto-card__value">$1.806.080.000</div>
+        <div class="presupuesto-card__label">Construcción total del proyecto</div>
+        <div class="presupuesto-card__bar">
+          <div class="presupuesto-card__bar-fill" data-width="69.8%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart -->
+    <div class="chart-wrap reveal">
+      <h3>Desglose de costos por componente</h3>
+      <canvas id="budget-chart" height="100"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PUNTO CRÍTICO — ETAPA 1
+     ============================================================ -->
+<section id="etapa1-detalle" class="section critico-section" style="background: var(--clr-bg);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">
+        <span class="section-eyebrow-text">Etapa 1 — Análisis detallado</span>
+      </div>
+      <h2 class="section-title">El punto<br/><em>crítico: el suelo</em></h2>
+      <p class="section-lead">Antes de construir, hay que sanear. Bajos de Mena exige un trabajo previo riguroso de manejo de residuos y preparación del terreno.</p>
+    </div>
+
+    <div class="critico-grid reveal-stagger">
+      <!-- Gestión de basura -->
+      <div class="critico-card">
+        <h3>🚛 Gestión de Basura y Movimiento de Tierra</h3>
+        <ul class="critico-list">
+          <li>
+            <span>Volumen total de material</span>
+            <span>10.740 m³</span>
+          </li>
+          <li>
+            <span>Equivalente en toneladas</span>
+            <span>≈ 10.000 ton.</span>
+          </li>
+          <li>
+            <span>Logística en camión</span>
+            <span>14.000 m³</span>
+          </li>
+          <li>
+            <span>Costo por m³</span>
+            <span>$4.100 CLP</span>
+          </li>
+          <li class="highlight">
+            <span>Costo total movimiento basura</span>
+            <span>$57.400.000</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Saneamiento Etapa 1 -->
+      <div class="critico-card">
+        <h3>⚙️ Saneamiento Etapa 1 (+ 20% est.)</h3>
+        <ul class="critico-list">
+          <li>
+            <span>Cierre perimetral</span>
+            <span>1.200 UF</span>
+          </li>
+          <li>
+            <span>Excavación de tierra</span>
+            <span>2.500 UF</span>
+          </li>
+          <li>
+            <span>Traslado de nueva tierra</span>
+            <span>1.200 UF</span>
+          </li>
+          <li>
+            <span>Compactación</span>
+            <span>200 UF</span>
+          </li>
+          <li class="highlight">
+            <span>Total saneamiento Etapa 1</span>
+            <span>$303.140.000</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Construcción Etapa 1 -->
+      <div class="critico-card">
+        <h3>🏛️ Construcción Etapa 1</h3>
+        <ul class="critico-list">
+          <li>
+            <span>Capilla (240 m²)</span>
+            <span>$600.000.000</span>
+          </li>
+          <li>
+            <span>Edificio contenedores (735 m²)</span>
+            <span>$500.000.000</span>
+          </li>
+          <li>
+            <span>Referencia: ≈ 17 UF/m²</span>
+            <span>(La Pincoya)</span>
+          </li>
+          <li class="highlight">
+            <span>Total construcción Etapa 1</span>
+            <span>$1.100.000.000</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Resumen Etapa 1 -->
+      <div class="critico-card" style="background: linear-gradient(135deg, rgba(245,197,24,0.06) 0%, var(--clr-surface) 100%); border-color: rgba(245,197,24,0.3);">
+        <h3>📋 Resumen Etapa 1</h3>
+        <ul class="critico-list">
+          <li>
+            <span>Saneamiento</span>
+            <span>$303.140.000</span>
+          </li>
+          <li>
+            <span>Construcción</span>
+            <span>$1.100.000.000</span>
+          </li>
+          <li>
+            <span>Imprevistos y contingencias</span>
+            <span>Est. +15%</span>
+          </li>
+          <li class="highlight" style="border-bottom: none; padding-bottom: 0; border-top: 1px solid rgba(245,197,24,0.3); padding-top: 0.75rem; margin-top: 0.5rem;">
+            <span style="font-weight: 600; color: var(--clr-text);">Total proyectado Etapa 1</span>
+            <span style="font-size: 1.05rem;">$1.500.000.000</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tabla de etapas -->
+    <div class="chart-wrap reveal" style="margin-top: var(--space-md);">
+      <h3>Resumen de superficies por etapa</h3>
+      <div style="overflow-x: auto; margin-top: 1rem;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+          <thead>
+            <tr>
+              <th style="text-align: left; padding: 0.75rem 1rem; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--clr-muted); border-bottom: 1px solid var(--clr-border);">Etapa</th>
+              <th style="text-align: right; padding: 0.75rem 1rem; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--clr-muted); border-bottom: 1px solid var(--clr-border);">Terreno m²</th>
+              <th style="text-align: right; padding: 0.75rem 1rem; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--clr-muted); border-bottom: 1px solid var(--clr-border);">Construida m²</th>
+              <th style="text-align: right; padding: 0.75rem 1rem; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--clr-muted); border-bottom: 1px solid var(--clr-border);">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background: rgba(245,197,24,0.04);">
+              <td style="padding: 0.9rem 1rem; color: var(--clr-text); font-weight: 600; border-bottom: 1px solid var(--clr-border);">① Primera etapa</td>
+              <td style="padding: 0.9rem 1rem; text-align: right; color: var(--clr-text); font-family: var(--font-mono); font-size: 0.85rem; border-bottom: 1px solid var(--clr-border);">5.700</td>
+              <td style="padding: 0.9rem 1rem; text-align: right; color: var(--clr-text); font-family: var(--font-mono); font-size: 0.85rem; border-bottom: 1px solid var(--clr-border);">735</td>
+              <td style="padding: 0.9rem 1rem; text-align: right; border-bottom: 1px solid var(--clr-border);"><span class="tag">Prioridad</span></td>
+            </tr>
+            <tr>
+              <td style="padding: 0.9rem 1rem; color: var(--clr-muted); border-bottom: 1px solid var(--clr-border);">② Segunda etapa</td>
+              <td style="padding: 0.9rem 1rem; text-align: right; color: var(--clr-muted); font-family: var(--font-mono); font-size: 0.85rem; border-bottom: 1px solid var(--clr-border);">2.000</td>
+              <td style="padding: 0.9rem 1rem; text-align: right; color: var(--clr-muted); font-family: var(--font-mono); font-size: 0.85rem; border-bottom: 1px solid var(--clr-border);">360</td>
+              <td style="padding: 0.9rem 1rem; text-align: right; border-bottom: 1px solid var(--clr-border);"><span style="font-size: 0.72rem; color: var(--clr-muted);">Fase 2</span></td>
+            </tr>
+            <tr>
+              <td style="padding: 0.9rem 1rem; color: var(--clr-muted); border-bottom: 1px solid var(--clr-border);">③ Tercera etapa</td>
+              <td style="padding: 0.9rem 1rem; text-align: right; color: var(--clr-muted); font-family: var(--font-mono); font-size: 0.85rem; border-bottom: 1px solid var(--clr-border);">5.642</td>
+              <td style="padding: 0.9rem 1rem; text-align: right; color: var(--clr-muted); font-family: var(--font-mono); font-size: 0.85rem; border-bottom: 1px solid var(--clr-border);">845</td>
+              <td style="padding: 0.9rem 1rem; text-align: right; border-bottom: 1px solid var(--clr-border);"><span style="font-size: 0.72rem; color: var(--clr-muted);">Fase 3</span></td>
+            </tr>
+            <tr>
+              <td style="padding: 0.9rem 1rem; color: var(--clr-muted); border-bottom: 1px solid var(--clr-border);">④ Cuarta etapa</td>
+              <td style="padding: 0.9rem 1rem; text-align: right; color: var(--clr-muted); font-family: var(--font-mono); font-size: 0.85rem; border-bottom: 1px solid var(--clr-border);">4.880</td>
+              <td style="padding: 0.9rem 1rem; text-align: right; color: var(--clr-muted); font-family: var(--font-mono); font-size: 0.85rem; border-bottom: 1px solid var(--clr-border);">716</td>
+              <td style="padding: 0.9rem 1rem; text-align: right; border-bottom: 1px solid var(--clr-border);"><span style="font-size: 0.72rem; color: var(--clr-muted);">Fase 4</span></td>
+            </tr>
+            <tr style="background: rgba(245,197,24,0.06);">
+              <td style="padding: 0.9rem 1rem; color: var(--clr-accent); font-weight: 700;">Total</td>
+              <td style="padding: 0.9rem 1rem; text-align: right; color: var(--clr-accent); font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700;">18.222</td>
+              <td style="padding: 0.9rem 1rem; text-align: right; color: var(--clr-accent); font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700;">2.656</td>
+              <td style="padding: 0.9rem 1rem; text-align: right;"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CIERRE
+     ============================================================ -->
+<section id="cierre" class="cierre-section">
+  <div class="cierre-content container">
+    <div class="cierre-logo">❤</div>
+
+    <h2 class="cierre-title">
+      Construyamos juntos<br/><em>esta esperanza</em>
+    </h2>
+
+    <p class="cierre-body">
+      Bajos de Mena necesita este centro. Las familias que viven en la periferia merecen dignidad, belleza y comunidad. Tu aporte hace posible que este proyecto deje de ser un sueño y se convierta en piedra, madera y vida.
+    </p>
+
+    <a href="https://misericordia.iraiser.eu/misericordia/chili/" target="_blank" class="cierre-cta">
+      Apoyar el proyecto
+    </a>
+
+    <div class="cierre-quote">
+      <p>«La misericordia cambia el mundo. Hace al mundo menos frío y más justo.»</p>
+      <cite>— Papa Francisco</cite>
+    </div>
+
+    <div style="margin-top: 3rem; display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+      <div style="text-align: center;">
+        <div style="font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--clr-muted); margin-bottom: 0.25rem;">Contacto</div>
+        <a href="https://misericordia.fr/es" target="_blank" style="color: var(--clr-accent); font-size: 0.9rem; text-decoration: none;">misericordia.fr/es</a>
+      </div>
+      <div style="width: 1px; height: 30px; background: var(--clr-border);"></div>
+      <div style="text-align: center;">
+        <div style="font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--clr-muted); margin-bottom: 0.25rem;">Chile</div>
+        <span style="color: var(--clr-text); font-size: 0.9rem;">Bajos de Mena, Santiago</span>
+      </div>
+      <div style="width: 1px; height: 30px; background: var(--clr-border);"></div>
+      <div style="text-align: center;">
+        <div style="font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--clr-muted); margin-bottom: 0.25rem;">Proyecto</div>
+        <span style="color: var(--clr-text); font-size: 0.9rem;">Bajos de Mena 2025</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 Misericordia · <a href="https://misericordia.fr/es" target="_blank">misericordia.fr</a></p>
+  <p style="font-size: 0.72rem; color: var(--clr-muted);">Proyecto Bajos de Mena · Santiago de Chile</p>
+</footer>
+
+<!-- Scripts -->
+<script src="../../shared/js/core.js" type="module"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+{
+  "proyecto": "Bajos de Mena",
+  "subtitulo": "Un nuevo corazón para la periferia de Santiago",
+  "presupuesto_total": 2586080000,
+  "saneamiento_total": 780000000,
+  "construccion_total": 1806080000,
+  "etapas": [
+    {
+      "num": 1,
+      "nombre": "Primera Etapa",
+      "terreno_m2": 5700,
+      "construida_m2": 735,
+      "imagen": "assets/etapa01.jpg",
+      "descripcion": "Capilla, cafetería, jardín y biblioteca. El corazón espiritual y comunitario del proyecto.",
+      "programas": ["Capilla 240 m²", "Cafetería 90 m²", "Biblio. + Conserv. 218 m²", "Jardín 90 m²"],
+      "costo_total": 1500000000,
+      "costo_saneamiento": 303140000,
+      "color": "#F5C518"
+    },
+    {
+      "num": 2,
+      "nombre": "Segunda Etapa",
+      "terreno_m2": 2000,
+      "construida_m2": 360,
+      "imagen": "assets/etapa02.jpg",
+      "descripcion": "Ampliación del espacio comunitario con albergue e iglesia.",
+      "programas": ["Iglesia 240 asientos", "Patio Virgen", "Capilla complementaria"],
+      "color": "#e6b800"
+    },
+    {
+      "num": 3,
+      "nombre": "Tercera Etapa",
+      "terreno_m2": 5642,
+      "construida_m2": 845,
+      "imagen": "assets/etapa03.jpg",
+      "descripcion": "Centro educativo y camarín con bodega para el deporte comunitario.",
+      "programas": ["Educación 960 m²", "Camarín + Bodegas 145 m²", "Cancha deportiva"],
+      "color": "#d4a900"
+    },
+    {
+      "num": 4,
+      "nombre": "Cuarta Etapa",
+      "terreno_m2": 4880,
+      "construida_m2": 716,
+      "imagen": "assets/etapa04.jpg",
+      "descripcion": "Hogar, albergue, huerta y estacionamientos para completar el plan maestro.",
+      "programas": ["Hogar 480 m²", "Albergue 90 m²", "Huerta", "Est. 53 autos"],
+      "color": "#c49800"
+    }
+  ],
+  "programas_total": [
+    { "num": 1, "nombre": "Cafetería", "m2": 90 },
+    { "num": 2, "nombre": "Biblio. + Conserv.", "m2": 218 },
+    { "num": 3, "nombre": "Educación", "m2": 960 },
+    { "num": 4, "nombre": "Jardín", "m2": 90 },
+    { "num": 5, "nombre": "Iglesia (240 asientos)", "m2": null },
+    { "num": 6, "nombre": "Patio Virgen", "m2": null },
+    { "num": 7, "nombre": "Capilla", "m2": null },
+    { "num": 8, "nombre": "Camarín + Bodegas", "m2": 145 },
+    { "num": 9, "nombre": "Albergue", "m2": 90 },
+    { "num": 10, "nombre": "Hogar", "m2": 480 },
+    { "num": 11, "nombre": "Huerta", "m2": null }
+  ],
+  "etapa1_detalle": {
+    "volumen_material_m3": 10740,
+    "toneladas": 10000,
+    "logistica_camion_m3": 14000,
+    "costo_basura": 57400000,
+    "costo_por_m3": 4100,
+    "saneamiento": {
+      "cierre_perimetral_uf": 1200,
+      "excavacion_uf": 2500,
+      "traslado_tierra_uf": 1200,
+      "compactacion_uf": 200
+    },
+    "construccion": {
+      "capilla_m2": 240,
+      "capilla_costo": 600000000,
+      "edificio_contenedores_m2": 735,
+      "edificio_contenedores_costo": 500000000
+    }
+  }
+}

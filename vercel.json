@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/brands/bajos-de-mena", "destination": "/brands/bajos-de-mena/index.html" }
+  ]
+}
